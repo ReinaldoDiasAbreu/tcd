@@ -38,9 +38,13 @@ public class ConexaoBd {
      * Inicialização de valores estáticos.
      */
     static {
-        URL = "jdbc:mysql://remotemysql.com:3306/4GjflrvG29?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC";
+        //URL = "jdbc:mysql://remotemysql.com:3306/4GjflrvG29?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC";
+        URL = "jdbc:mysql://remotemysql.com:3306/4GjflrvG29?zeroDateTimeBehavior=CONVERT_TO_NULL";
         usuario = "4GjflrvG29";
         senha = "TPzeiPav61";
+        /*URL = "jdbc:mysql://127.0.0.1:3306/TCD?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC";
+        usuario = "root";
+        senha = "99049663";*/
     }
 
     //<editor-fold defaultstate="collapsed" desc="Construtor privado">

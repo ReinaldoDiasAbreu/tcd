@@ -45,6 +45,14 @@ public class CriarCliente extends javax.swing.JFrame {
         jbSalvar = new javax.swing.JButton();
         jbCancelar = new javax.swing.JButton();
         teste = new javax.swing.JButton();
+        jtPlaca = new javax.swing.JTextField();
+        jlEndereço1 = new javax.swing.JLabel();
+        jtModelo = new javax.swing.JTextField();
+        jlEndereço2 = new javax.swing.JLabel();
+        jtFabricante = new javax.swing.JTextField();
+        jlFabricante = new javax.swing.JLabel();
+        jtCor = new javax.swing.JTextField();
+        jlFabricante1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -101,36 +109,80 @@ public class CriarCliente extends javax.swing.JFrame {
             }
         });
 
+        jtPlaca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtPlacaActionPerformed(evt);
+            }
+        });
+
+        jlEndereço1.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jlEndereço1.setText("Placa");
+
+        jtModelo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtModeloActionPerformed(evt);
+            }
+        });
+
+        jlEndereço2.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jlEndereço2.setText("Modelo");
+
+        jtFabricante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtFabricanteActionPerformed(evt);
+            }
+        });
+
+        jlFabricante.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jlFabricante.setText("Fabricante");
+
+        jtCor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtCorActionPerformed(evt);
+            }
+        });
+
+        jlFabricante1.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jlFabricante1.setText("Cor");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(teste)
+                .addGap(39, 39, 39)
+                .addComponent(jbCancelar)
+                .addGap(18, 18, 18)
+                .addComponent(jbSalvar)
+                .addGap(102, 102, 102))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlFabricante1)
+                    .addComponent(jlFabricante)
+                    .addComponent(jlEndereço2)
+                    .addComponent(jlEndereço1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jlNome)
-                            .addComponent(jlCPF))
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jlCPF)
+                            .addComponent(jlTelefone)
+                            .addComponent(jlEndereço))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jtEndereço, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jtNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(teste)
-                            .addGap(39, 39, 39)
-                            .addComponent(jbCancelar)
-                            .addGap(18, 18, 18)
-                            .addComponent(jbSalvar))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jlTelefone)
-                                .addComponent(jlEndereço))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jtTelefone)
-                                .addComponent(jtEndereço, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(jtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtTelefone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtCor, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtFabricante, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(96, 96, 96))
         );
         jPanel1Layout.setVerticalGroup(
@@ -152,16 +204,31 @@ public class CriarCliente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlEndereço)
                     .addComponent(jtEndereço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(63, 63, 63)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlEndereço1)
+                    .addComponent(jtPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlEndereço2)
+                    .addComponent(jtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlFabricante)
+                    .addComponent(jtFabricante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlFabricante1)
+                    .addComponent(jtCor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbSalvar)
                     .addComponent(jbCancelar)
                     .addComponent(teste))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addGap(83, 83, 83))
         );
 
         jtNome.getAccessibleContext().setAccessibleName("");
-        jtNome.getAccessibleContext().setAccessibleDescription("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -175,9 +242,8 @@ public class CriarCliente extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -210,9 +276,31 @@ public class CriarCliente extends javax.swing.JFrame {
         cliente.setNome(jtNome.getText());
         cliente.setEndereco(jtEndereço.getText());
         cliente.setTelefone(jtTelefone.getText());
+        cliente.setPlaca(jtPlaca.getText());
+        cliente.setModelo(jtModelo.getText());
+        cliente.setFabricante(jtFabricante.getText());
+        cliente.setCor(jtCor.getText());
+        
         Long id = new ClienteDao().salvar(cliente);
+        cliente.setId(id);
         System.out.println(cliente);
     }//GEN-LAST:event_jbSalvarActionPerformed
+
+    private void jtPlacaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtPlacaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtPlacaActionPerformed
+
+    private void jtModeloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtModeloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtModeloActionPerformed
+
+    private void jtFabricanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtFabricanteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtFabricanteActionPerformed
+
+    private void jtCorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtCorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtCorActionPerformed
     
 
     /**
@@ -256,11 +344,19 @@ public class CriarCliente extends javax.swing.JFrame {
     private javax.swing.JButton jbSalvar;
     private javax.swing.JLabel jlCPF;
     private javax.swing.JLabel jlEndereço;
+    private javax.swing.JLabel jlEndereço1;
+    private javax.swing.JLabel jlEndereço2;
+    private javax.swing.JLabel jlFabricante;
+    private javax.swing.JLabel jlFabricante1;
     private javax.swing.JLabel jlNome;
     private javax.swing.JLabel jlTelefone;
     private javax.swing.JTextField jtCPF;
+    private javax.swing.JTextField jtCor;
     private javax.swing.JTextField jtEndereço;
+    private javax.swing.JTextField jtFabricante;
+    private javax.swing.JTextField jtModelo;
     private javax.swing.JTextField jtNome;
+    private javax.swing.JTextField jtPlaca;
     private javax.swing.JTextField jtTelefone;
     private javax.swing.JButton teste;
     // End of variables declaration//GEN-END:variables
