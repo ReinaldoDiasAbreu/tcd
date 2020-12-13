@@ -1,0 +1,12 @@
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/dao/EstacionamentoDao.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Entidade.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Cliente.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Aluguel.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/gui/CriarCliente.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/dao/ConexaoBd.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/dao/IDao.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Veiculo.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/dao/ClienteDao.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/dao/AbstractDao.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Vaga.java
+/Users/reinaldo/Documents/Estacionamento/src/main/java/br/edu/ifnmg/tcd/entity/Estacionamento.java
